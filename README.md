@@ -2,9 +2,11 @@
 Completed coding task for Quantcast Interview
 
 Source File(s):
+
 most_active_cookie.c
 
 Compile: 
+
 gcc most_active_cookie.c -o most_active_cookie
 
 Program Running and Command Line Usage:
@@ -12,6 +14,7 @@ Program Running and Command Line Usage:
 ./most_active_cookie [cookie log file] -d [date in yyyy-mm-dd form]
 
 Given a cookie log file in the following format:
+
 cookie,timestamp
 
 Example:
@@ -44,14 +47,19 @@ Examples:
 
 
 ./most_active_cookie cookie_log.csv -d 2018-12-08
+
 SAZuXPGUrfbcn5UA
+
 4sMM2LxV07bPJzwf
+
 fbcn5UAVanZf6UtG
 
 ./most_active_cookie cookie_log.csv -d 2018-12-09
+
 AtY0laUfhglK3lC7
 
 ./most_active_cookie cookie_log.csv -d 2018-12-06
+
 (no output)
 
 For a list of running tests, please see command_tests.txt
