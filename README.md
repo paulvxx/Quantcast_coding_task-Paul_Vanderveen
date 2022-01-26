@@ -10,17 +10,6 @@ Compile:
 gcc most_active_cookie.c -o most_active_cookie
 
 
-Note: The following header files must be included:
-
-stdio.h
-
-stdlib.h
-
-string.h
-
-unistd.h
-
-
 
 Program Running and Command Line Usage:
 
