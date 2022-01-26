@@ -10,15 +10,15 @@ Compile:
 gcc most_active_cookie.c -o most_active_cookie
 
 
-The following header files must be included:
+Note: The following header files must be included:
 
-#include <stdio.h>
+stdio.h
 
-#include <stdlib.h>
+stdlib.h
 
-#include <string.h>
+string.h
 
-#include <unistd.h>
+unistd.h
 
 
 
