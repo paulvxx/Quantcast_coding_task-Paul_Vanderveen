@@ -30,6 +30,8 @@ The program prints the most active cookie(s) for the specified date. If there ar
 entries for a specified date, then no output is returned.
 
 Examples:
+
+
 ./most_active_cookie cookie_log.csv -d 2018-12-08
 SAZuXPGUrfbcn5UA
 4sMM2LxV07bPJzwf
