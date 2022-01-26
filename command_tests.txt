@@ -1,0 +1,47 @@
+Command Tests:
+
+Check results match expected results:
+
+./most_active_cookie my_cookie_log.csv -d 2018-12-08
+QoYfFKjlBWbyzOEh
+qKkoTAM9jj3Y8UWm
+
+./most_active_cookie my_cookie_log.csv -d 2018-12-07
+2f6HZ5Gwjtl9KM54
+
+./most_active_cookie my_cookie_log.csv -d 2018-12-06
+2AtygVQ6GnejC4ir
+Q2PvwPE2cYFG1Rl1
+ttYD4XYdK9PumL1V
+L3RPhEWVdA0eEsJY
+
+Check for bad output:
+
+./most_active_cookie badfile.txt -d 2018-12-06
+(stderr) File is in bad format.
+
+./most_active_cookie badfile.txt -d
+Usage: ./most_active_cookie logfile -d date
+where date is in yyyy-mm-dd format.
+
+./most_active_cookie badfile.txt a b c d e
+Usage: ./most_active_cookie logfile -d date
+where date is in yyyy-mm-dd format.
+
+./most_active_cookie my_cookie_log.csv -d 2018-13-02-04-4000
+(stderr) Date must be a valid yyyy-mm-dd format.
+
+./most_active_cookie my_cookie_log.csv -d 20000-12-01
+(stderr) Date must be a valid yyyy-mm-dd format.
+
+./most_active_cookie my_cookie_log.csv -d 2020-12-47
+(stderr) Date must be a valid yyyy-mm-dd format.
+
+./most_active_cookie my_cookie_log.csv -d not-a-valid-date
+(stderr) Date must be a valid yyyy-mm-dd format.
+
+./most_active_cookie my_cookie_log.csv not_a_good_command -d
+most_active_cookie: option requires an argument -- d
+(stderr) Date should be specified with -d option.
+
+...
