@@ -9,6 +9,18 @@ Compile:
 
 gcc most_active_cookie.c -o most_active_cookie
 
+
+The following header files must be included:
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <string.h>
+
+#include <unistd.h>
+
+
 Program Running and Command Line Usage:
 
 ./most_active_cookie [cookie log file] -d [date in yyyy-mm-dd form]
